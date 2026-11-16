@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal homepage and short introduction.">
+  <title>Your Name</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f5ee;
+      --ink: #202b24;
+      --muted: #46574b;
+      --accent: #345c43;
+      --rule: #c9d0c5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.65 system-ui, sans-serif;
+    }
+    .page {
+      width: min(100% - 3rem, 54rem);
+      margin-inline: auto;
+    }
+    header {
+      padding-block: 1.65rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    header a {
+      color: var(--accent);
+      font-weight: 650;
+      text-underline-offset: .25em;
+    }
+    main {
+      padding-block: clamp(4rem, 12vw, 9rem);
+    }
+    h1, h2 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+    }
+    h1 {
+      max-width: 12ch;
+      font-size: clamp(3rem, 9vw, 6rem);
+      line-height: 1;
+      letter-spacing: -.055em;
+      margin: 0 0 1.5rem;
+    }
+    h2 {
+      font-size: 1.85rem;
+      margin: 0 0 .5rem;
+    }
+    p { max-width: 53ch; margin: 0; }
+    .intro {
+      color: var(--accent);
+      font-size: clamp(1.1rem, 3vw, 1.35rem);
+    }
+    section {
+      max-width: 37rem;
+      margin-top: clamp(3rem, 7vw, 5.5rem);
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--rule);
+    }
+    section p { color: var(--muted); }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Replace these three pieces of sample text with your name, intro, and bio. -->
+      <h1>Hi, I’m Your Name.</h1>
+      <p class="intro">[One sentence about what you do or what you’re curious about.]</p>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About me</h2>
+        <p>[Write two or three sentences about yourself. You could mention what you’re working on, what you enjoy, or what you’re learning lately.]</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
